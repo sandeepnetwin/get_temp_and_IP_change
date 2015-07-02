@@ -2,8 +2,9 @@
 /**
 * @Programmer: AES
 * @Description: When device ip change then automatically set proper ip address on poolspa securedsowing configuration
-* Please change ':8080' ip address. 
 **/
+//Enter Your property Number (original property number)
+$property_number = "";
 
 // Get cURL resource
 $curl = curl_init();
@@ -13,7 +14,7 @@ curl_setopt_array($curl, array(
     CURLOPT_USERAGENT => 'Codular Sample cURL Request',
     CURLOPT_POST => 1,
     CURLOPT_POSTFIELDS => array(
-        'pro_number' => 'Enter Your property Number (original property number)',
+        'pro_number' => $property_number,
         
     )
 ));
