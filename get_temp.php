@@ -3,7 +3,7 @@
 * @Programmer: AES
 * @Description: Get sensor temperatures 
 * 
-**/
+**/ 
 //phpinfo()
 exec('sudo modprobe w1-gpio');
 exec('sudo modprobe w1-therm');
